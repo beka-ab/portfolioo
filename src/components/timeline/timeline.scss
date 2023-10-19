@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin-right: 25px;
   h6 {
     margin: 10px 0px;
   }
@@ -21,4 +21,8 @@
 .exp-content {
   background: #eeeeee;
   padding: 10px;
+}
+.tringle {
+  color: #eeeeee;
+  transform: translate(-15px, 0px);
 }

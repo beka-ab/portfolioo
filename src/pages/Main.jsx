@@ -2,6 +2,8 @@ import React from "react";
 import Box from "../components/Box";
 import { Headlines } from "../data/data";
 import Timeline from "../components/timeline/Timelune";
+import Experience from "../components/experience/Experience";
+import { Experience as experienceData } from "../data/data";
 
 export default function Main() {
   return (
@@ -27,6 +29,7 @@ export default function Main() {
           </div>
         </div>
       </div>
+      <Experience experiences={experienceData} />
     </section>
   );
 }
