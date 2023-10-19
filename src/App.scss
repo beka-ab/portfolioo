@@ -69,9 +69,10 @@
   max-width: 250px;
   position: relative;
   background-color: #222935;
+  transition: transform 0.3s ease;
 }
 .aside--hidden {
-  display: none;
+  transform: translateX(-250px);
 }
 
 .nav-bar {
@@ -120,12 +121,14 @@
   align-items: stretch;
   flex-wrap: nowrap;
   margin-bottom: 0;
+  transition: transform 0.3s ease;
 }
 .main-container-button .button {
   text-align: center;
   padding: 5px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  transition: transform 0.3s ease;
 }
 .main-container-button .button__icon {
   margin: auto;
@@ -138,10 +141,12 @@
   bottom: auto;
   left: 250px;
   border-radius: 0;
+  transition: transform 0.3s ease;
 }
 .main-container-button--nav .button__icon {
   font-size: 20px;
   padding: 0px 3px;
+  transition: transform 0.3s ease;
 }
 .main-container-button--left-aligned {
   position: absolute;
@@ -149,6 +154,7 @@
   border-radius: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  transition: transform 0.3s ease;
 }
 .main-container .arrow-button .button {
   display: flex;
@@ -489,10 +495,12 @@ Experience section
     bottom: auto;
     left: 50px;
     border-radius: 0;
+    transition: transform 0.3s ease;
   }
   .main-container-button--nav .button__icon {
     font-size: 16px;
     padding: 0px 3px;
+    transition: transform 0.3s ease;
   }
   .education__timeline {
     padding: 20px;
@@ -702,6 +710,7 @@ h2 {
 .main-container-button .button__icon {
   display: flex;
   justify-content: center;
+  transition: transform 0.3s ease;
 }
 
 .aside #aside-button_left {
