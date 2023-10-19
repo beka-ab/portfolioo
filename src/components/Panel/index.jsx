@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import PhotoBox from "../PhotoBox";
+import PhotoBox from "../Photobox";
 import Nav from "../Navigation";
 import Button from "../Button";
 import { Link } from "react-router-dom";

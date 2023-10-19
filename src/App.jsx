@@ -1,17 +1,14 @@
-import Main from "./pages/Main";
-import logo from "./logo.svg";
-import Coverpage from "./pages/Cover";
+import { Routes, Route } from "react-router-dom";
+import MainPageComponent from "./modules/mainPage";
+import IntroPageComponent from "./modules/introPage";
 
-import { Routes, Route, Link } from "react-router-dom";
-function App() {
+const App = () => {
   return (
-    <>
-      <Routes>
-        <Route path="/" element={<Coverpage />} />
-        <Route path="/pages/main" element={<Main />} />
-      </Routes>
-    </>
+    <Routes>
+      <Route path="/" element={<IntroPageComponent />} />
+      <Route path="/inner/*" element={<MainPageComponent />} />
+    </Routes>
   );
-}
+};
 
 export default App;
