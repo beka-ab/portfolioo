@@ -1,5 +1,4 @@
 import React from "react";
-import "../../App.css";
 
 const Info = ({ title, text }) => {
   const infoStyle = {
