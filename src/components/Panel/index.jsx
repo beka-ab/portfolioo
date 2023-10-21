@@ -21,14 +21,14 @@ const Panel = () => {
         {" "}
         <PhotoBox name="John Doe" avatar="..assets/images" />
         <Nav />
-        {/* <Link to="/"> */}
-        <Button
-          icon={<FontAwesomeIcon icon={faChevronLeft} />}
-          text="Go back"
-          id="aside-button_left"
-          className="aside__button"
-        />
-        {/* </Link> */}
+        <Link to="/">
+          <Button
+            icon={<FontAwesomeIcon icon={faChevronLeft} />}
+            text="Go back"
+            id="aside-button_left"
+            className="aside__button"
+          />
+        </Link>
       </aside>{" "}
       <div
         className={`main-container-button ${

@@ -1,0 +1,34 @@
+.expertise__item {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.expertise__date {
+  position: absolute;
+  top: 27px;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  color: $eventCol;
+}
+
+.expertise__info {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+.expertise__info-company {
+  font-weight: $headingFontWeight;
+  justify-self: start;
+  align-self: baseline;
+}
+.expertise__info-job,
+.expertise__info-company {
+  font-weight: $headingFontWeight;
+  font-size: $headingFontSize;
+}
+.expertise__info-description {
+  grid-column: 2;
+  margin-top: 5px;
+}

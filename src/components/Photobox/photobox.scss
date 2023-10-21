@@ -1,0 +1,18 @@
+.photo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding-top: $mainHeadingFontSize;
+  margin-bottom: 50px;
+}
+.photo-box__name {
+  color: $mainCol;
+  margin: 0px;
+}
+.photo-box__avatar {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}

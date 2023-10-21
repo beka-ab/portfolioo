@@ -1,0 +1,31 @@
+.feedback__item {
+  margin-bottom: 40px;
+}
+
+.feedback__reporter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-top: 15px;
+}
+.feedback__reporter-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.feedback__author-details {
+  font-size: $textFontSize;
+}
+
+.feedback__author-name {
+  margin-right: 5px;
+}
+
+.feedback__citeurl-link {
+  text-decoration: none;
+  color: $headingCol;
+}

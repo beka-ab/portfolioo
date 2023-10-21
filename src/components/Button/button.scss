@@ -1,0 +1,33 @@
+.button {
+  background-color: $asideCol;
+  color: $mainCol;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
+}
+
+.aside .button:hover {
+  background-color: $headingCol;
+}
+
+.button .button__icon {
+  color: $mainCol;
+}
+
+.main-container-button .button__icon {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.aside #aside-button_left {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  margin-left: 25%;
+  margin-bottom: 5px;
+}

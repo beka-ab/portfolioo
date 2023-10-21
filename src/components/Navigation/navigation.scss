@@ -1,0 +1,29 @@
+.nav-bar {
+  width: 250px;
+}
+.nav-bar__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  max-width: 250px;
+  gap: 30px;
+  margin-left: 20px;
+}
+.nav-bar__icon {
+  font-size: $textFontSize;
+  margin-right: 15px;
+}
+.nav-bar__link {
+  text-decoration: none;
+  color: $eventCol;
+  transition: color 0.3s ease;
+}
+.nav-bar__link:hover {
+  color: $headingCol;
+}
+.nav-bar .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
