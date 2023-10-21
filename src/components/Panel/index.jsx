@@ -20,15 +20,15 @@ const Panel = () => {
       <aside className={`aside ${navHide ? "aside--hidden" : ""}`}>
         {" "}
         <PhotoBox name="John Doe" avatar="..assets/images" />
-        <Nav></Nav>
-        <Link to="/">
-          <Button
-            icon={<FontAwesomeIcon icon={faChevronLeft} />}
-            text="Go back"
-            id="aside-button_left"
-            className="aside__button"
-          />
-        </Link>
+        <Nav />
+        {/* <Link to="/"> */}
+        <Button
+          icon={<FontAwesomeIcon icon={faChevronLeft} />}
+          text="Go back"
+          id="aside-button_left"
+          className="aside__button"
+        />
+        {/* </Link> */}
       </aside>{" "}
       <div
         className={`main-container-button ${
