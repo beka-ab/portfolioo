@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "../Button";
-import Info from "../Info";
+import Button from "../Button/Button";
+import Info from "../Info/Info";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 const scrollToTop = () => {

@@ -1,11 +1,11 @@
 import React from "react";
-import About from "../../components/Box/index";
-import { Timeline } from "../../components/Timeline/index";
+import About from "../../components/Box/Box";
+import { Timeline } from "../../components/Timeline/Timeline";
 import eventsData from "../../modules/timelineData";
-import Expertise from "../../components/Expertise/index";
-import Portfolio from "../../components/Portfolio/index";
-import { Address } from "../../components/Address/index";
-import { Feedback } from "../../components/Feedback/index";
+import Expertise from "../../components/Expertise/Expertise";
+import Portfolio from "../../components/Portfolio/Portfolio";
+import { Address } from "../../components/Address/Adress";
+import { Feedback } from "../../components/Feedback/Feedback";
 import experiences from "../../modules/experience";
 import feedbackData from "../../modules/feedbackData";
 

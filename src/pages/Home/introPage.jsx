@@ -1,6 +1,6 @@
 import bkImg from "../../assets/images/background.png";
-import Button from "../../components/Button/index";
-import PhotoBox from "../../components/Photobox/index";
+import Button from "../../components/Button/Button";
+import PhotoBox from "../../components/Photobox/Photobox";
 import { Link } from "react-router-dom";
 const IntroPage = () => {
   return (

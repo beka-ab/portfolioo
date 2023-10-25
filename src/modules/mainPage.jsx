@@ -1,5 +1,5 @@
 import React from "react";
-import Panel from "../components/Panel/index";
+import Panel from "../components/Panel/Panel";
 import AllComponents from "../pages/Inner/allComponent";
 import { Routes, Route } from "react-router-dom";
 

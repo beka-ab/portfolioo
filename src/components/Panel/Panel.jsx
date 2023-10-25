@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import PhotoBox from "../Photobox";
-import Nav from "../Navigation";
-import Button from "../Button";
+import PhotoBox from "../Photobox/Photobox";
+import Nav from "../Navigation/Navigation";
+import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
