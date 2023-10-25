@@ -9,7 +9,7 @@
   right: auto;
   bottom: auto;
   left: 0;
-  color: $eventCol;
+  color: #667081;
 }
 
 .expertise__info {
@@ -19,14 +19,14 @@
   align-items: center;
 }
 .expertise__info-company {
-  font-weight: $headingFontWeight;
+  font-weight: 700;
   justify-self: start;
   align-self: baseline;
 }
 .expertise__info-job,
 .expertise__info-company {
-  font-weight: $headingFontWeight;
-  font-size: $headingFontSize;
+  font-weight: 700;
+  font-size: 16px;
 }
 .expertise__info-description {
   grid-column: 2;

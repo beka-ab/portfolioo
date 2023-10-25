@@ -1,7 +1,33 @@
-.about__heading {
-  margin-top: 20px;
+.button {
+  background-color: #222935;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 10px 20px;
 }
 
-.about__text {
-  line-height: 21px;
+.aside .button:hover {
+  background-color: #26c17e;
+}
+
+.button .button__icon {
+  color: #fff;
+}
+
+.main-container-button .button__icon {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.aside #aside-button_left {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  margin-left: 25%;
+  margin-bottom: 5px;
 }

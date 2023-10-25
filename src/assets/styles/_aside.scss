@@ -1,0 +1,40 @@
+.aside {
+  max-width: 250px;
+  position: relative;
+  background-color: #222935;
+  transition: max-width 0.3s ease;
+}
+.aside--hidden {
+  max-width: 0;
+  overflow: hidden;
+}
+
+.nav-bar {
+  width: 250px;
+}
+.nav-bar__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  max-width: 250px;
+  gap: 30px;
+  margin-left: 20px;
+}
+.nav-bar__icon {
+  font-size: 14px;
+  margin-right: 15px;
+}
+.nav-bar__link {
+  text-decoration: none;
+  color: #667081;
+  transition: color 0.3s ease;
+}
+.nav-bar__link:hover {
+  color: #26c17e;
+}
+.nav-bar .button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}

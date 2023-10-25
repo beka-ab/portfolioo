@@ -1,67 +1,131 @@
-@import "mixin";
-@import "variables";
-@import "function";
+// @import "mixin";
+// @import "variables";
+// @import "function";
 
 /*Intro Page*/
+// .intro-page {
+//   @include dimensions(100%, 100vh);
+//   position: relative;
+//   overflow: hidden;
+
+//   &__background-image {
+//     @include dimensions(100%, 100%);
+//     position: absolute;
+//     object-fit: cover;
+//     z-index: -1;
+//   }
+
+//   &__content {
+//     @include absoluteCenter;
+//     @include dimensions(500px);
+//     @include flexContainer($direction: column, $justify: center);
+//     .photo-box {
+//       margin-bottom: 20px;
+
+//       .photo-box__name {
+//         font-size: 40px;
+//         margin-bottom: 15px;
+//       }
+
+//       .photo-box__avatar {
+//         @include dimensions(150px);
+//       }
+
+//       .photo-box__title {
+//         font-size: 20px;
+//         color: $mainCol;
+//         margin-bottom: 5px;
+//         font-weight: 600;
+//       }
+//       .photo-box__description {
+//         font-size: $textFontSize;
+//         color: $mainCol;
+//         text-align: center;
+//         line-height: 21px;
+//       }
+//     }
+
+//     .button {
+//       display: block;
+//       margin: auto;
+
+//       &:hover {
+//         background-color: $headingCol;
+//       }
+//     }
+//   }
+//   &__button {
+//     text-decoration: none;
+//   }
+
+//   &__shadow {
+//     position: absolute;
+//     @include dimensions(100%, 100%);
+//     background-color: $shadowCol;
+//     z-index: 0;
+//   }
+// }
 .intro-page {
-  @include dimensions(100%, 100vh);
+  width: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden;
-
-  &__background-image {
-    @include dimensions(100%, 100%);
-    position: absolute;
-    object-fit: cover;
-    z-index: -1;
-  }
-
-  &__content {
-    @include absoluteCenter;
-    @include dimensions(500px);
-    @include flexContainer($direction: column, $justify: center);
-    .photo-box {
-      margin-bottom: 20px;
-
-      .photo-box__name {
-        font-size: 40px;
-        margin-bottom: 15px;
-      }
-
-      .photo-box__avatar {
-        @include dimensions(150px);
-      }
-
-      .photo-box__title {
-        font-size: 20px;
-        color: $mainCol;
-        margin-bottom: 5px;
-        font-weight: 600;
-      }
-      .photo-box__description {
-        font-size: $textFontSize;
-        color: $mainCol;
-        text-align: center;
-        line-height: 21px;
-      }
-    }
-
-    .button {
-      display: block;
-      margin: auto;
-
-      &:hover {
-        background-color: $headingCol;
-      }
-    }
-  }
-  &__button {
-    text-decoration: none;
-  }
-
-  &__shadow {
-    position: absolute;
-    @include dimensions(100%, 100%);
-    background-color: $shadowCol;
-    z-index: 0;
-  }
+}
+.intro-page__background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -1;
+}
+.intro-page__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+.intro-page__content .photo-box {
+  margin-bottom: 20px;
+}
+.intro-page__content .photo-box .photo-box__name {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.intro-page__content .photo-box .photo-box__avatar {
+  width: 150px;
+}
+.intro-page__content .photo-box .photo-box__title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.intro-page__content .photo-box .photo-box__description {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 21px;
+}
+.intro-page__content .button {
+  display: block;
+  margin: auto;
+}
+.intro-page__content .button:hover {
+  background-color: #26c17e;
+}
+.intro-page__button {
+  text-decoration: none;
+}
+.intro-page__shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5921568627);
+  z-index: 0;
 }

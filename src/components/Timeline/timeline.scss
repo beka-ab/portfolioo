@@ -39,7 +39,7 @@
   margin: 0 auto;
 }
 .timeline-event__details .info__title {
-  font-weight: $headingFontWeight;
+  font-weight: 700;
 }
 .timeline-event__details .info__title,
 .timeline-event__details .info__text {
@@ -56,12 +56,12 @@
   left: -10px;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  border-right: 10px solid $borderCol;
+  border-right: 10px solid #eee;
 }
 
 .timeline-event__line {
   width: 3px;
   height: 100px;
   margin-top: 20px;
-  background-color: $headingCol;
+  background-color: #26c17e;
 }

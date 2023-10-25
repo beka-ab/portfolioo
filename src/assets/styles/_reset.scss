@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 html,
 body,
 div,
@@ -91,6 +92,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 article,
 aside,
 details,
@@ -104,14 +106,17 @@ nav,
 section {
   display: block;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -119,7 +124,28 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2 {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 25px;
+  font-weight: 700;
+  color: #26c17e;
+  line-height: 30px;
+  margin-bottom: 30px;
+  margin-top: 60px;
 }
