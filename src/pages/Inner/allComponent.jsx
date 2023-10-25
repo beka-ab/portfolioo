@@ -7,6 +7,7 @@ import Portfolio from "../../components/Portfolio/Portfolio";
 import { Address } from "../../components/Address/Adress";
 import { Feedback } from "../../components/Feedback/Feedback";
 import experiences from "../../modules/experience";
+import { Skills } from "../../components/Skills/Skills";
 import feedbackData from "../../modules/feedbackData";
 
 const AllComponents = () => {
@@ -16,6 +17,7 @@ const AllComponents = () => {
         <About />
         <Timeline data={eventsData} />
         <Expertise data={experiences} />
+        <Skills />
         <Portfolio />
         <Address />
         <Feedback data={feedbackData} />
