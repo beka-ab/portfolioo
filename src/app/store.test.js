@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import educationReducer from "../features/education/educationsSlice";
-import skillsReducer from "../features/skills/skillsSlice";
+import educationReducer from "../features/education/Education";
+import skillsReducer from "../features/skills/Skillsslice";
 
 describe("Redux Store", () => {
   it("should have correct initial state", () => {
@@ -72,9 +72,7 @@ describe("Redux Store", () => {
 
     const action = {
       type: "skills/skillsFetched",
-      payload: [
-        // Some skills data
-      ],
+      payload: [],
     };
 
     store.dispatch(action);
