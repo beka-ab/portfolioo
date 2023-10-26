@@ -22,8 +22,7 @@ test("renders Feedback component with correct data", () => {
   testData.forEach((item) => {
     const feedbackText = screen.getByText(item.feedback);
     const reporterName = screen.getByText(item.reporter.name);
-    const citeUrlLink = screen.getByText("example.com"); // Adjust this based on your test data
-
+    const citeUrlLink = screen.getByText("example.com");
     expect(feedbackText).toBeInTheDocument();
     expect(reporterName).toBeInTheDocument();
     expect(citeUrlLink).toHaveAttribute("href", item.reporter.citeUrl);
