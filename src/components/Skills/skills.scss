@@ -1,5 +1,4 @@
-@import "./mixins";
-@import "./variables";
+@import "../../assets/styles/variables";
 .skills {
   position: relative;
   .button {
@@ -15,11 +14,11 @@
   }
   &-container {
     display: block;
-    // table {
-    //   @include dimensions(100%);
-    //   border-collapse: collapse;
-    //   margin-top: 10px;
-    // }
+    table {
+      @include dimensions(100%);
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
     &__range {
       td {

@@ -1,4 +1,5 @@
 import React from "react";
+import "./info.scss";
 
 const Info = ({ title, text }) => {
   const infoStyle = {

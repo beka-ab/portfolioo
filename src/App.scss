@@ -1,5 +1,6 @@
 @import "./assets/styles/aside";
 @import "./assets/styles/variables";
+@import "./assets/styles/mixins";
 @import "./assets/styles/intro-page";
 @import "./components/Expertise/experience.scss";
 @import "./components/Timeline/timeline.scss";
@@ -10,6 +11,7 @@
 @import "./components/Button/button.scss";
 @import "./assets/styles/mobile";
 @import "./assets/styles/contact";
+@import "./components/Skills/skills.scss";
 /* Main */
 .main {
   margin: 20px;

@@ -32,7 +32,13 @@
 .timeline-event__title {
   margin-bottom: 10px;
 }
-
+.loading-overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #26c17e;
+  height: 100%;
+}
 .timeline-event__details {
   position: relative;
   flex: 1;

@@ -1,6 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import "../../assets/styles/_skills.scss";
 
 const getStoredSkills = () => {
   const storedSkills = localStorage.getItem("skills");
