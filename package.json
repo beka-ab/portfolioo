@@ -63,8 +63,8 @@
       "axios": "axios/dist/node/axios.cjs"
     },
     "collectCoverageFrom": [
-      "src/**/*.{js,ts}",
-      "!**/node_modules/"
+      "src/**/*.{js,ts,jsx}",
+      "!/node_modules/"
     ],
     "coverageThreshold": {
       "global": {

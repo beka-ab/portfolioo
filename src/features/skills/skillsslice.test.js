@@ -4,6 +4,7 @@ import skillsReducer, {
   postSkills,
   toggleForm,
 } from "./skillsSlice";
+import "./Skillsslice";
 
 describe("skillsSlice", () => {
   let store;

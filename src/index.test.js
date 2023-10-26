@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { store } from "./app/store";
 import { makeServer } from "./services/server";
 import App from "./App";
+import "./index";
 
 jest.mock("./services/server", () => ({
   makeServer: jest.fn(),
