@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import MainPageComponent from "./modules/mainPage";
-import IntroPageComponent from "./modules/introPage";
+import MainPageComponent from "./utilities/mainPage";
+import IntroPageComponent from "./utilities/introPage";
 
 const App = () => {
   return (

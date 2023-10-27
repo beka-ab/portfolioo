@@ -7,10 +7,10 @@ import skypeImg from "../../assets/images/icons/skype-icon.png";
 
 export function Address() {
   return (
-    <section id="contact">
+    <section id="contact" data-testid="address-component">
       <h2>Contacts</h2>
       <ul className="contact-list">
-        <ContactInfo icon={faPhone} data="591950663" type="phone" />
+        <ContactInfo icon={faPhone} data="591 95 06 63" type="phone" />
         <ContactInfo
           icon={faEnvelope}
           data="dbeqaabuladze@gmail.com"

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { BrowserRouter as Router } from "react-router-dom";
-import sections from "../../modules/navigationData";
+import sections from "../../utilities/navigationData";
 import Nav from "./Navigation";
 
 test("renders navigation links with correct labels", () => {

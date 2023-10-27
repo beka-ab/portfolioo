@@ -1,8 +1,8 @@
 import React from "react";
-import Box from "../../modules/aboutSection";
+import Box from "../../utilities/aboutSection";
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" data-testid="about-component">
       <Box
         title="About me"
         content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis

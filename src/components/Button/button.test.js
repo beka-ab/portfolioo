@@ -11,7 +11,7 @@ test("renders button with text", () => {
 test("renders button with icon", () => {
   const mockIcon = <div className="icon" />;
   render(<Button icon={mockIcon} />);
-  const iconElement = screen.getByTestId("button-icon");
+  const iconElement = screen.getByTestId("custom-id");
   expect(iconElement).toBeInTheDocument();
 });
 

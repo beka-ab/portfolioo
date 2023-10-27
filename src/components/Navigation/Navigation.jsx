@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { NavLink } from "react-router-dom";
-import sections from "../../modules/navigationData";
-import scrollToElement from "../../modules/scrollElement";
+import sections from "../../utilities/navigationData";
 const Nav = () => {
   const [activeLink, setActiveLink] = useState(null);
 
@@ -10,9 +9,18 @@ const Nav = () => {
     setActiveLink(sectionId);
     scrollToElement(sectionId);
   };
+  const scrollToElement = (elementId) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar" data-testid="nav">
       <ul className="nav-bar__list">
         {sections &&
           sections.map((section) => (
