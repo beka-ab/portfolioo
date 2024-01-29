@@ -13,10 +13,10 @@ const IntroPage = () => {
       <div className="intro-page__shadow"></div>
       <div className="intro-page__content">
         <PhotoBox
-          name="John Doe"
+          name="Beka Abuladze"
           avatar="..assets/images"
           title="Programmer. Creative. Innovator"
-          description="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque"
+          description="Give me the problem to solve it"
         />
         <Link to="/inner" className="intro-page__button">
           <Button text="Know more"></Button>

@@ -19,7 +19,7 @@ const Panel = () => {
     <>
       <aside className={`aside ${navHide ? "aside--hidden" : ""}`}>
         {" "}
-        <PhotoBox name="John Doe" avatar="..assets/images" />
+        <PhotoBox name="Beka Abuladze" avatar="..assets/images" />
         <Nav />
         <Link to="/">
           <Button

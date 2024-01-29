@@ -1,7 +1,7 @@
 const eventsData = [
   {
-    date: 2001,
-    title: "Title 0",
+    date: 2020,
+    title: "Ti",
     text: "Elit voluptate ad nostrud laboris. Elit incididunt mollit enim enim id id laboris dolore et et mollit. Mollit adipisicing ullamco exercitation ullamco proident aute enim nisi. Dolore eu fugiat consectetur nulla sunt Lorem ex ad. Anim eiusmod do tempor fugiat minim do aliqua amet ex dolore velit.\r\n",
   },
   {

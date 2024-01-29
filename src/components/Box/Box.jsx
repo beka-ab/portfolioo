@@ -5,20 +5,17 @@ const About = () => {
     <section id="about" data-testid="about-component">
       <Box
         title="About me"
-        content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-        dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-        ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
-        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-        arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-        Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras
-        dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac,
-        enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-        Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean
-        imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper
-        ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus
-        eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
-        sem neque"
+        content="Hello, I'm Beka Abuladze, a passionate junior front-end developer with a toolbox filled with HTML, CSS, Sass, Git, TypeScript, JavaScript, and React. I thrive on solving problems in effective and innovative ways, always seeking elegant solutions to complex challenges.
+
+My journey in the world of coding is marked by a relentless work ethic. I find joy in the process of turning ideas into tangible, functional products. From crafting pixel-perfect interfaces to diving into the intricacies of code, I embrace each step of the development journey.
+
+Being a problem solver at heart, I approach each project with enthusiasm, ready to tackle obstacles head-on. I believe in the power of continuous learning and adapting to new technologies. Git is my ally in version control, and I find joy in creating seamless and dynamic user experiences with JavaScript and React.
+
+Driven by a goal-oriented mindset, I am a firm believer that with a destination in mind, coupled with determination, I will inevitably reach my goals. As a junior developer, I am excited about the challenges ahead and the growth that comes with them. Join me on this coding adventure, where every line of code tells a story of innovation and determination.
+
+Let's build something incredible together!
+
+"
         contentClassName="about__text"
         headingClassname="about__heading"
       ></Box>

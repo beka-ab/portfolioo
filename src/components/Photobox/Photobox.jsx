@@ -1,5 +1,5 @@
 import React from "react";
-import avatarImg from "../../assets/images/avatar.png";
+import avatarImg from "../../assets/images/avatar.jpg";
 const PhotoBox = ({ name, title, description, avatar }) => {
   return (
     <div className="photo-box">
