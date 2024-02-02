@@ -3,6 +3,7 @@
   position: relative;
   background-color: #222935;
   transition: max-width 0.3s ease;
+  z-index: 2;
 }
 .aside--hidden {
   max-width: 0;
@@ -37,4 +38,7 @@
 .nav-bar .button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.main-container-button--nav {
+  left: 250px;
 }

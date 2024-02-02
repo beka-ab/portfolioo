@@ -18,11 +18,14 @@
 .portfolio__filter .active {
   color: #26c17e;
 }
-
+.link {
+  color: blue;
+}
 .portfolio__items {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  cursor: context-menu;
 }
 
 .portfolio-item {
@@ -34,6 +37,7 @@
 }
 .portfolio-item__image {
   width: 200px;
+  height: 150px;
 }
 
 .portfolio__title,
@@ -41,7 +45,17 @@
 .portfolio__link {
   margin-bottom: 5px;
 }
-
+.portfolio__title {
+  font-weight: bold;
+}
+.portfolio__content {
+  display: flex;
+  column-gap: 10px;
+}
+.portfolio__content svg {
+  width: 20px;
+  height: 20px;
+}
 .portfolio__info {
   position: absolute;
   top: auto;

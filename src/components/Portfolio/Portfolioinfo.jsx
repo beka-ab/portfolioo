@@ -12,7 +12,7 @@ const PortfolioInfo = ({ title, text, description, urlRepo, urlLive }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        View repo
+        {urlRepo && <span className="link">View Repo</span>}
       </a>
       <br />
       <br />
@@ -22,7 +22,7 @@ const PortfolioInfo = ({ title, text, description, urlRepo, urlLive }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        View Live
+        <span className="link">View Live</span>
       </a>
     </div>
   );

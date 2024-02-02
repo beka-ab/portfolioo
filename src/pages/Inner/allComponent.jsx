@@ -8,6 +8,7 @@ import { Address } from "../../components/Address/Adress";
 import { Feedback } from "../../components/Feedback/Feedback";
 import experiences from "../../utilities/experience";
 import feedbackData from "../../utilities/feedbackData";
+import { Skills } from "../../components/Skills/Skills";
 
 const AllComponents = () => {
   return (
@@ -16,6 +17,7 @@ const AllComponents = () => {
         <About />
         <Timeline data={eventsData} />
         <Expertise data={experiences} />
+        <Skills />
         <Portfolio />
         <Address />
         <Feedback data={feedbackData} />

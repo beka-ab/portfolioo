@@ -24,7 +24,7 @@ export function makeServer() {
         date: 2023,
         title: "Front-End Development Bootcamp at EPAM",
         description:
-          "Eager to bridge the gap between business strategy and technological innovation, I embarked on a transformative journey with EPAM, a renowned international company. Participating in their front-end development bootcamp was a pivotal moment in my career. The program, designed to be intensive and hands-on, immersed me in the latest technologies and best practices in front-end development. Under the mentorship of industry experts, I gained practical experience, fine-tuned my coding skills, and learned to create seamless user experiences. This immersive bootcamp experience at EPAM has been instrumental in shaping me into a dynamic and skilled junior front-end developer.",
+          " Eager to bridge the gap between business strategy and technological innovation, I embarked on a transformative journey with EPAM, a renowned international company. Participating in their front-end development bootcamp was a pivotal moment in my career. The program, designed to be intensive and hands-on, immersed me in the latest technologies and best practices in front-end development. Under the mentorship of industry experts, I gained practical experience, fine-tuned my coding skills, and learned to create seamless user experiences. This immersive bootcamp experience at EPAM has been instrumental in shaping me into a dynamic and skilled junior front-end developer. ",
       });
     },
 

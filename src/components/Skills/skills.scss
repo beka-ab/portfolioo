@@ -1,105 +1,79 @@
-@import "../../assets/styles/variables";
-.skills {
+.skills-container {
+  display: flex;
+  align-items: center;
+}
+.prog-icon {
+  height: 50px;
+}
+.pacman {
   position: relative;
-  .button {
-    @include absolutePosition(0, 0, auto, auto);
+  background: transparent;
+  z-index: 1;
 
-    &:hover {
-      background-color: $headingCol;
-    }
-
-    &__icon {
-      margin-right: 3px;
-    }
-  }
-  &-container {
+  &::before,
+  &::after {
+    position: absolute;
+    top: -35px;
     display: block;
-    table {
-      @include dimensions(100%);
-      border-collapse: collapse;
-      margin-top: 10px;
-    }
-
-    &__range {
-      td {
-        padding: 4px 0;
-        border: 1px solid $eventCol;
-        border-top: none;
-        border-collapse: collapse;
-      }
-    }
-
-    &__text {
-      td {
-        border: none;
-        font-size: 14px;
-        color: $eventCol;
-      }
-
-      td {
-        width: calc(100% / 3);
-      }
-    }
+    border-radius: 50%;
+    content: "";
+    height: 0px;
+    width: 0px;
   }
 
-  &-form {
-    border: 1px solid $headingCol;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 5px;
-
-    &__field {
-      gap: 10px;
-      margin: 10px 0;
-
-      .field {
-        width: 200px;
-        border: none;
-        border: 1px solid $secCol;
-        border-radius: 5px;
-        padding: 8px 6px;
-        margin-left: 10px;
-      }
-
-      .field:focus {
-        border: none;
-        outline: 1px solid $headingCol;
-      }
-
-      .error {
-        border: 1px solid $errorCol;
-        color: $errorCol;
-        outline: none;
-      }
-    }
-
-    &__error {
-      margin: 5px 0;
-      color: $errorCol;
-      font-size: 12px;
-    }
-
-    &__button {
-      background-color: $eventCol;
-      padding: 10px 15px;
-      border-radius: 5px;
-      border: none;
-      margin: 10px 5px;
-    }
-
-    .valid-button {
-      cursor: pointer;
-
-      &:hover {
-        background-color: $headingCol;
-      }
-    }
+  &::before {
+    animation: chunk-top 0.5s ease infinite;
+    border: 35px solid #ffcc00;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
   }
 
-  .skills-form__range {
-    padding: 6px 15px;
-    margin-bottom: 5px;
-    background-color: $headingCol;
-    color: $mainCol;
+  &::after {
+    animation: chunk-bottom 0.5s ease infinite;
+    border: 35px solid #ffcc00;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+}
+.prog-icon {
+  display: flex;
+  justify-content: space-around;
+  animation: eating-path 10s linear infinite;
+  width: 100%;
+
+  &::before {
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+  }
+}
+@keyframes chunk-top {
+  0%,
+  100% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+}
+
+@keyframes chunk-bottom {
+  0%,
+  100% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes eating-path {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100vw);
   }
 }

@@ -43,6 +43,15 @@ const Timeline = () => {
                 </div>
                 <div className="timeline-event__details">
                   <Info title={event.title} text={event.description} />
+                  {event.date === 2023 && (
+                    <a
+                      target="_blank"
+                      href="https://certificates.epam.com/certificates/0f5689e3-f729-4582-9ee4-9acfbf18adb4"
+                      rel="noreferrer"
+                    >
+                      View Certificate
+                    </a>
+                  )}
                   <div className="timeline-event__arrow"></div>
                 </div>
               </div>
