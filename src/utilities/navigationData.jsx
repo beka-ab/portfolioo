@@ -39,11 +39,11 @@ const sections = [
     label: "Contact",
     icon: faLocationArrow,
   },
-  {
-    id: "feedback",
-    label: "Feedback",
-    icon: faComment,
-  },
+  // {
+  //   id: "feedback",
+  //   label: "Feedback",
+  //   icon: faComment,
+  // },
 ];
 
 export default sections;

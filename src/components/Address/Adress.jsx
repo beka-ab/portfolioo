@@ -2,9 +2,17 @@ import React from "react";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { ContactItem, ContactInfo } from "../../services/contactLogo";
 import twitterImg from "../../assets/images/icons/twitter-icon.png";
-import facebookImg from "../../assets/images/icons/facebook-icon.png";
 import linkedinImg from "../../assets/images/icons/linkedin.svg";
 import gitHub from "../../assets/images/icons/github.svg";
+import Button from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 
 export function Address() {
   return (
@@ -37,6 +45,11 @@ export function Address() {
           altText="Skype Logo"
         />
       </ul>
+      <div className="top-scroll">
+        <Button
+          icon={<FontAwesomeIcon icon={faChevronUp} onClick={scrollToTop} />}
+        />
+      </div>
     </section>
   );
 }

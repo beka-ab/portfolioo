@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
 }
+.skills h1 {
+  margin-bottom: 50px;
+}
 .prog-icon {
   height: 50px;
 }
@@ -9,11 +12,12 @@
   position: relative;
   background: transparent;
   z-index: 1;
+  left: -38px;
 
   &::before,
   &::after {
     position: absolute;
-    top: -35px;
+    top: -65px;
     display: block;
     border-radius: 50%;
     content: "";
@@ -23,14 +27,14 @@
 
   &::before {
     animation: chunk-top 0.5s ease infinite;
-    border: 35px solid #ffcc00;
+    border: 63px solid #ffcc00;
     border-left-color: transparent;
     border-bottom-color: transparent;
   }
 
   &::after {
     animation: chunk-bottom 0.5s ease infinite;
-    border: 35px solid #ffcc00;
+    border: 63px solid #ffcc00;
     border-right-color: transparent;
     border-top-color: transparent;
   }
@@ -38,7 +42,7 @@
 .prog-icon {
   display: flex;
   justify-content: space-around;
-  animation: eating-path 10s linear infinite;
+  animation: eating-path 15s linear infinite;
   width: 100%;
 
   &::before {

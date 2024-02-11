@@ -5,9 +5,9 @@ import eventsData from "../../utilities/timelineData";
 import Expertise from "../../components/Expertise/Expertise";
 import Portfolio from "../../components/Portfolio/Portfolio";
 import { Address } from "../../components/Address/Adress";
-import { Feedback } from "../../components/Feedback/Feedback";
+// import { Feedback } from "../../components/Feedback/Feedback";
 import experiences from "../../utilities/experience";
-import feedbackData from "../../utilities/feedbackData";
+// import feedbackData from "../../utilities/feedbackData";
 import { Skills } from "../../components/Skills/Skills";
 
 const AllComponents = () => {
@@ -20,7 +20,7 @@ const AllComponents = () => {
         <Skills />
         <Portfolio />
         <Address />
-        <Feedback data={feedbackData} />
+        {/* <Feedback data={feedbackData} /> */}
       </section>
     </main>
   );
