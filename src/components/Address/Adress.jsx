@@ -36,13 +36,13 @@ export function Address() {
           platform="Linkedin"
           link="https://www.linkedin.com/in/beka-abuladze-50a344217/"
           imageSrc={linkedinImg}
-          altText="Skype Logo"
+          altText="linkedin Logo"
         />
         <ContactItem
           platform="Github"
           link="https://github.com/beka-ab"
           imageSrc={gitHub}
-          altText="Skype Logo"
+          altText="github Logo"
         />
       </ul>
       <div className="top-scroll">
