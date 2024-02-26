@@ -1,18 +1,12 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import Info from "../Info/Info";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSyncAlt } from "@fortawesome/free-solid-svg-icons";
-import { fetchEducation } from "../../features/education/Education";
+import { educationData } from "../../services/server";
 
 const Timeline = () => {
-  const dispatch = useDispatch();
-  const data = useSelector((state) => state.educations.data);
   const status = useSelector((state) => state.educations.status);
-
-  useEffect(() => {
-    dispatch(fetchEducation());
-  }, [dispatch]);
 
   return (
     <section id="education" data-testid="timeline-component">
@@ -28,37 +22,26 @@ const Timeline = () => {
               />
             </div>
           )}
-          {status === "failure" && (
-            <div className="error-message">
-              Something went wrong; please review your server connection!
-            </div>
-          )}
-          {status === "success" &&
-          Array.isArray(data.educations) &&
-          data.educations.length > 0 ? (
-            data.educations.map((event, index) => (
-              <div className="education__timeline-event" key={index}>
-                <div className="timeline-event__date">
-                  {event.date} <div className="timeline-event__line"></div>
-                </div>
-                <div className="timeline-event__details">
-                  <Info title={event.title} text={event.description} />
-                  {event.date === 2023 && (
-                    <a
-                      target="_blank"
-                      href="https://certificates.epam.com/certificates/0f5689e3-f729-4582-9ee4-9acfbf18adb4"
-                      rel="noreferrer"
-                    >
-                      View Certificate
-                    </a>
-                  )}
-                  <div className="timeline-event__arrow"></div>
-                </div>
+          {educationData.map((event, index) => (
+            <div className="education__timeline-event" key={index}>
+              <div className="timeline-event__date">
+                {event.date} <div className="timeline-event__line"></div>
               </div>
-            ))
-          ) : status === "success" && data.educations.length === 0 ? (
-            <div className="error-message">No education data available.</div>
-          ) : null}
+              <div className="timeline-event__details">
+                <Info title={event.title} text={event.description} />
+                {event.date === 2023 && (
+                  <a
+                    target="_blank"
+                    href="https://certificates.epam.com/certificates/0f5689e3-f729-4582-9ee4-9acfbf18adb4"
+                    rel="noreferrer"
+                  >
+                    View Certificate
+                  </a>
+                )}
+                <div className="timeline-event__arrow"></div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ const AllComponents = () => {
     <main className="main">
       <section className="main-container">
         <About />
-        {/* <Timeline data={eventsData} /> */}
+        <Timeline data={eventsData} />
         <Expertise data={experiences} />
         <Skills />
         <Portfolio />
