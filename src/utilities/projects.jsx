@@ -9,6 +9,9 @@ import Photosnap from "../assets/images/photosnap.jpg";
 import freelanceuno from "../assets/images/freelanceuno.png";
 import freelancedos from "../assets/images/freelancedos.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Typesctipt from "../assets/typescript.svg";
+import api from "../assets/api.png";
+
 import {
   faReact,
   faGit,
@@ -20,6 +23,24 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faMobileScreen, faDatabase } from "@fortawesome/free-solid-svg-icons";
 export const portfolioItems = [
+  {
+    id: 0,
+    category: "all, projects",
+    title: "Image Galerry",
+    description: (
+      <>
+        <FontAwesomeIcon icon={faHtml5} color="red" />
+        <FontAwesomeIcon icon={faCss3} color="#2AA4F4" />
+        <FontAwesomeIcon icon={faReact} color="#FFD600" />
+        <FontAwesomeIcon icon={faMobileScreen} color="#000000" />
+        <FontAwesomeIcon icon={faGit} color="#F4511E" />
+        <img className="typescript-img" src={Typesctipt} alt="" />
+      </>
+    ),
+    urlRepo: "https://github.com/beka-ab/images-unsplash",
+    imageUrl: api,
+    urlLive: "https://images-unsplash.vercel.app/",
+  },
   {
     id: 1,
     category: "all, projects",
