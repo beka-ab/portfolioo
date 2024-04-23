@@ -10,6 +10,7 @@ import {
   faSass,
   faPhp,
 } from "@fortawesome/free-brands-svg-icons";
+import Typesctipt from "../../assets/typescript.svg";
 import { faMobileScreen, faDatabase } from "@fortawesome/free-solid-svg-icons";
 export const Skills = () => {
   return (
@@ -47,6 +48,7 @@ export const Skills = () => {
           color="#F06292"
           className="prog-icon  sass"
         />
+        <img className="prog-icon  sass" src={Typesctipt} alt="" />
       </div>
     </section>
   );

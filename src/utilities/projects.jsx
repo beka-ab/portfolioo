@@ -1,8 +1,8 @@
 import Rating from "../assets/images/interrating.jpg";
 import Calculator from "../assets/images/tipcalc.png";
 import Card from "../assets/images/intercard.png";
-import Article from "../assets/images/articleprev.jpeg";
-import Advice from "../assets/images/advicegener.jpg";
+import TicTacToe from "../assets/images/TicTacToe.jpg";
+import WeathetCity from "../assets/images/WeatherCity.png";
 import Courses from "../assets/images/itcourses.png";
 import Estore from "../assets/images/estore.png";
 import Photosnap from "../assets/images/photosnap.jpg";
@@ -41,23 +41,7 @@ export const portfolioItems = [
     imageUrl: api,
     urlLive: "https://images-unsplash.vercel.app/",
   },
-  {
-    id: 1,
-    category: "all, projects",
-    title: "Interactive Rating",
-    description: (
-      <>
-        <FontAwesomeIcon icon={faHtml5} color="red" />
-        <FontAwesomeIcon icon={faCss3} color="#2AA4F4" />
-        <FontAwesomeIcon icon={faJs} color="#FFD600" />
-        <FontAwesomeIcon icon={faMobileScreen} color="#000000" />
-        <FontAwesomeIcon icon={faGit} color="#F4511E" />
-      </>
-    ),
-    urlRepo: "https://github.com/beka-ab/interactive-rating",
-    imageUrl: Rating,
-    urlLive: "https://beka-ab.github.io/interactive-rating/",
-  },
+
   {
     id: 2,
     category: "all, projects",
@@ -95,35 +79,36 @@ export const portfolioItems = [
   {
     id: 4,
     category: "all, projects",
-    title: "Article Preview Component",
+    title: "Tic-Tac-Toe",
     description: (
       <>
-        <FontAwesomeIcon icon={faHtml5} color="red" />
+        <FontAwesomeIcon icon={faReact} color="#53C1DE" />
         <FontAwesomeIcon icon={faCss3} color="#2AA4F4" />
-        <FontAwesomeIcon icon={faJs} color="#FFD600" />
         <FontAwesomeIcon icon={faMobileScreen} color="#000000" />
         <FontAwesomeIcon icon={faGit} color="#F4511E" />
+        <img className="typescript-img" src={Typesctipt} alt="" />
       </>
     ),
-    urlRepo: "https://github.com/beka-ab/Article-Preview-Component",
-    imageUrl: Article,
-    urlLive: "https://beka-ab.github.io/Article-Preview-Component/",
+    urlRepo: "https://github.com/beka-ab/tic-tac-toe",
+    imageUrl: TicTacToe,
+    urlLive: "https://tic-tac-toe-taupe-pi.vercel.app/",
   },
   {
     id: 5,
     category: "all, projects",
-    title: "Api Advice Generator App",
+    title: "Weather And City Search App",
     description: (
       <>
         <FontAwesomeIcon icon={faReact} color="#53C1DE" />
         <FontAwesomeIcon icon={faSass} color="#F06292" />
         <FontAwesomeIcon icon={faMobileScreen} />
         <FontAwesomeIcon icon={faGit} color="#F4511E" />
+        <img className="typescript-img" src={Typesctipt} alt="" />
       </>
     ),
-    urlRepo: "https://github.com/beka-ab/advise-api",
-    imageUrl: Advice,
-    urlLive: "https://beka-ab.github.io/advise-api/",
+    urlRepo: "https://weather-city-api.vercel.app/",
+    imageUrl: WeathetCity,
+    urlLive: "https://github.com/beka-ab/weather-api",
   },
   {
     id: 6,

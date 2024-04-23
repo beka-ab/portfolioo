@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" data-testid="about-component">
       <Box
         title="About me"
-        content="Hello, I'm Beka Abuladze, a passionate junior front-end developer with a toolbox filled with HTML, CSS, Sass, Git, JavaScript, and React. I thrive on solving problems in effective and innovative ways, always seeking elegant solutions to complex challenges.
+        content="Hello, I'm Beka Abuladze, a passionate junior front-end developer with a toolbox filled with HTML, CSS, Sass, Git, JavaScript, Typescript and React. I thrive on solving problems in effective and innovative ways, always seeking elegant solutions to complex challenges.
 
 My journey in the world of coding is marked by a relentless work ethic. I find joy in the process of turning ideas into tangible, functional products. From crafting pixel-perfect interfaces to diving into the intricacies of code, I embrace each step of the development journey.
 
